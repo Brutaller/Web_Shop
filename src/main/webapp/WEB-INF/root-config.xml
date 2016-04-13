@@ -5,9 +5,11 @@
        xmlns:tx="http://www.springframework.org/schema/cache"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/cache http://www.springframework.org/schema/cache/spring-cache.xsd">
 
-    <context:component-scan base-package="service"/>
+    <context:component-scan base-package="ru.kpfu.itis.service"/>
 
     <import resource="persistence-config.xml"/>
+    <import resource="security-config.xml"/>
+    <import resource="application-context.xml"/>
 
 
 </beans>

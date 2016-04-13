@@ -1,0 +1,138 @@
+.content {
+    margin-top: 70px;
+}
+
+body {
+    color: #e7e7e7;
+    background-color: #272b30;
+}
+
+legend {
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin-bottom: 20px;
+    font-size: 21px;
+    line-height: inherit;
+    color: #c8c8c8;
+    border: 0;
+    border-bottom: 1px solid #1c1e22;
+}
+
+form {
+    padding: 40px;
+    background-color: #181c21;
+    color: #c8c8c8;
+    border-radius: 10px;
+}
+
+#who {
+    color: #2b2e32;
+}
+
+.logo {
+    text-align: center;
+    padding-top: 7px;
+}
+
+.book-list {
+    background-color: #181c21;
+    color: #c8c8c8;
+
+}
+
+.alo {
+    background: #c8c8c8 url("../image/back.jpg");
+}
+
+#category-div {
+    padding-top: 38px;
+}
+
+#basket{
+    padding: 30px;
+}
+
+.mynavbar {
+    background-color: #181c21;
+    color: #e9e9e9;
+    font-family: Candara;
+    font-size: 20px;
+    line-height: 1.42857143;
+}
+
+.pad {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 65px;
+    padding-right: 65px;
+}
+
+h2 {
+    font-family: Candara;
+}
+
+.candara {
+    font-family: Candara;
+}
+
+TD.leftcol {
+    width: 150px; /* Ширина левой колонки с рисунком */
+    margin-right: 20px;
+    vertical-align: top; /* Выравнивание по верхнему краю */
+}
+
+.panel-default {
+    border-color: #675b62;
+}
+
+.post-body {
+    color: #e2e8e8;
+    background-color: #181c21;
+    border-color: #999999;
+}
+
+
+.panel-footer{
+    border-top: 1px solid #7a7a7a
+}
+.post-footer{
+    background-color: #281b25;
+    color: #737373;
+    text-align: right;
+}
+
+.list-group-item {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+    margin-bottom: -1px;
+    background-color: #181c21;
+    color: #e5e5e5;
+    border: 1px solid #999999;
+}
+
+.rightcol{
+    padding-left: 20px;
+}
+
+.mya{
+    text-decoration: none;
+    link: "#e5e5e5";
+
+}
+p{
+    font-size: 18px;
+}
+
+#js-bookid{
+    visibility: hidden;
+}
+
+
+.table{
+    background-color: #181c21;
+    color: #e5e5e5;
+    border: 1px solid #999999;
+}
+

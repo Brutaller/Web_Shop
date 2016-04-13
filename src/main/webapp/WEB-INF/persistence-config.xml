@@ -7,7 +7,7 @@
 
     <context:property-placeholder location="classpath:database.properties" ignore-unresolvable="true"/>
 
-    <jpa:repositories base-package="repository"/>
+    <jpa:repositories base-package="ru.kpfu.itis.repository"/>
 
     <bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource">
         <property name="driverClass" value="${jdbc.driverClassName}"/>
@@ -26,7 +26,7 @@
     <bean id="entityManagerFactory" class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
         <property name="dataSource" ref="dataSource"/>
         <property name="jpaVendorAdapter" ref="jpaVendorAdapter"/>
-        <property name="packagesToScan" value="model"/>
+        <property name="packagesToScan" value="ru.kpfu.itis.model"/>
     </bean>
 
 </beans>
