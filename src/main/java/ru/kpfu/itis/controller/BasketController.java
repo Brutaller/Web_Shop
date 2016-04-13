@@ -6,9 +6,12 @@ import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
+import ru.kpfu.itis.model.Basket;
 import ru.kpfu.itis.model.BasketItem;
 import ru.kpfu.itis.model.User;
 import ru.kpfu.itis.model.enums.UserRole;
+import ru.kpfu.itis.repository.BasketItemRepository;
+import ru.kpfu.itis.repository.BasketRepository;
 import ru.kpfu.itis.service.BasketItemService;
 
 import java.util.List;

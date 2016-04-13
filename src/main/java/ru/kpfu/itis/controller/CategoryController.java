@@ -6,6 +6,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
+import ru.kpfu.itis.aop.annotations.IncludeCategoriesList;
 import ru.kpfu.itis.model.Book;
 import ru.kpfu.itis.model.Category;
 import ru.kpfu.itis.model.User;
@@ -24,6 +25,7 @@ public class CategoryController {
     @Autowired
     CategoryService categoryService;
 
+    @IncludeCategoriesList
     @RequestMapping("/category/{id}")
     public String getIndexPageByCategoryId(@PathVariable("id") Long id, Model model){
 

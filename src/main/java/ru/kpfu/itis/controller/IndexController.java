@@ -7,9 +7,14 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import ru.kpfu.itis.aop.annotations.IncludeCategoriesList;
 import ru.kpfu.itis.model.Book;
+import ru.kpfu.itis.model.Category;
 import ru.kpfu.itis.model.User;
+import ru.kpfu.itis.repository.BookRepository;
+import ru.kpfu.itis.repository.CategoryRepository;
+import ru.kpfu.itis.repository.UserRepository;
 import ru.kpfu.itis.service.BookService;
 import ru.kpfu.itis.service.CategoryService;
+import ru.kpfu.itis.service.UserService;
 
 import javax.servlet.http.HttpServletRequest;
 import java.util.List;
