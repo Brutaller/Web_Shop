@@ -29,4 +29,12 @@
         <property name="packagesToScan" value="ru.kpfu.itis.model"/>
     </bean>
 
+    <!--Транзакции:-->
+
+    <bean id="transactionManager" class="org.springframework.orm.jpa.JpaTransactionManager">
+        <property name="entityManagerFactory" ref="entityManagerFactory"/>
+    </bean>
+
+    <tx:annotation-driven transaction-manager="transactionManager"/>
+
 </beans>

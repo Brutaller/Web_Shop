@@ -4,16 +4,24 @@ import javax.persistence.*;
 
 @Entity
 @Table(name = "items")
-public class BasketItem {
+public class BasketItem extends Item{
+
+    @ManyToOne
+    @JoinColumn(name = "basket_id")
+    private Basket basket;
+
+    public Basket getBasket() {
+        return basket;
+    }
+
+    public void setBasket(Basket basket) {
+        this.basket = basket;
+    }
 
     @Id
     @Column(name = "id")
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
-
-    @ManyToOne
-    @JoinColumn(name = "basket_id")
-    private Basket basket;
 
     @Column
     private String title;
@@ -36,14 +44,6 @@ public class BasketItem {
 
     public void setId(Long id) {
         this.id = id;
-    }
-
-    public Basket getBasket() {
-        return basket;
-    }
-
-    public void setBasket(Basket basket) {
-        this.basket = basket;
     }
 
     public String getTitle() {
@@ -85,4 +85,5 @@ public class BasketItem {
     public void setBook_id(Long book_id) {
         this.book_id = book_id;
     }
+
 }
