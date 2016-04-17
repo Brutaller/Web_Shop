@@ -1,6 +1,7 @@
 package ru.kpfu.itis.model;
 
 import javax.persistence.*;
+import java.util.List;
 
 /**
  * Created by Azat Zaripov on 10.04.16.

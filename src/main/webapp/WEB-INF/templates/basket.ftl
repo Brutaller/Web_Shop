@@ -24,7 +24,7 @@
     </div>
 
 
-    <div class="book-list col-lg-6 candara mynavbar alo" id="right">
+    <div class="book-list col-lg-7 candara mynavbar alo" id="right">
         <div id="js-items">
             <#if items??>
                 <h2>Ваша корзина:</h2>
@@ -40,12 +40,19 @@
 
                     <tbody>
                     <div id="js-items">
+                        <#assign sum = 0/>
                         <#list items as item>
+                            <#assign sum = sum + item.price/>
                             <tr>
                                 <td>${item_index + 1}</td>
                                 <td><a class="mya" href="/books/${item.book_id}">${item.title}</a></td>
                                 <td>${item.author}</td>
-                                <td>${item.price} rub</td>
+                                <td id="js-basket-price">${item.price}</td>
+                                <td id="js-num">
+                                    <button id="js-minus" style="color: #000" type="button">-</button>
+                                    <input type="text" id="js-inp" style="color: #000" size="3" maxlength="3" value="1">
+                                    <button id="js-plus" style="color: #000" type="button">+</button>
+                                </td>
                                 <td>
                                     <a href="" onclick="deleteBook(${item.id}, ${user.id})">
                                         <span class="glyphicon glyphicon-trash"></span>
@@ -56,6 +63,8 @@
 
                     </tbody>
                 </table>
+                <button class="btn btn-default" type="button">Купить все из корзины</button>
+                <h1>Итого: <div id="basket-sum">${sum}</div></h1>
             <#else>
                 <h2>Ваша корзина пуста!</h2>
             </#if>
